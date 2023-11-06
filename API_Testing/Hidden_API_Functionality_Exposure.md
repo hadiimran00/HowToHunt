@@ -9,16 +9,25 @@
 
 ## Steps to Perform This Attack :
 ```
-Step 1 : Capture the request into Burp, Send the request to repeater and intruder tab.
-Step 2 : Add the endpoint into the intruder tab and add the payload from the word-list.
-Step 3 : First use dictionary attack with SecLists (https://github.com/danielmiessler/SecLists) on the Endpoint.
-Step 4 : Either use your customized list or use the ones which I have provided in the above step.
-Step 5 : Then simply start the attack, start checking for 200 status.
-Step 7 : Once there is HTTP 200 OK status, start the recursive scan on the same endpoint for juicy information like swagger doc and so on.
-step 8 : Other method is to change the API version and try bruteforcing the same endpoint
-Eg: Redacted.com/api/v1/{Endpoint} ----- Redacted.com/api/v2/{Endpoint}
+Step 1: Capture the request into Burp, then send the request to the Repeater and Intruder tabs. This is a common practice to analyze and manipulate HTTP requests.
+
+Step 2: Add the endpoint to the Intruder tab and add payloads from a word list. This is typical for automated testing of a web application's endpoints with different payloads.
+
+Step 3: Use a dictionary attack on the endpoint using SecLists (https://github.com/danielmiessler/SecLists). Dictionary attacks are a common way to test for weak or default credentials.
+
+Step 4: Suggests using either a customized word list or the SecLists provided in step 3. This is a valid approach to customize the attack.
+
+Step 5: Start the attack and check for HTTP 200 status. HTTP 200 status indicates a successful response, which could be significant in a security context.
+
+Step 6: There is no Step 6 in the provided instructions. It seems you've skipped numbering here.
+
+Step 7: Once there's an HTTP 200 OK status, start a recursive scan on the same endpoint to discover additional information like Swagger documentation. This is a form of information gathering once a vulnerability is identified.
+
+Step 8: Another method is to change the API version and attempt brute forcing on the same endpoint, such as switching between versions (e.g., `/api/v1/` to `/api/v2/`). This is a valid approach to test different versions of an API for vulnerabilities.
 ```
 * Note: There will be minimum limits per request which will be assigned without API keys so make sure to utilize manual approach as much as you can, then the rest can be automated for scanning the vulnerability in API with automated tools.
 
 ## Contributor:
 - [N3T_hunt3r](https://twitter.com/N3T_hunt3r)
+- [ihadi08](https://twitter.com/ihadi08)
+
